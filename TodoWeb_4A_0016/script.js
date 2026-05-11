@@ -60,3 +60,13 @@ btntambah.addEventListener("click", function() {
             inputTugas.value = listbaru.querySelector(".nama").innerHTML;
             inputTanggal.value = listbaru.querySelector(".tanggal").innerHTML.replace("Tanggal: ", "");
             inputStatus.value = listbaru.querySelector(".status").innerHTML.replace("Status: ", "");
+
+            dataEdit = listbaru;
+            btntambah.innerHTML = "Update Data"; 
+        });
+    }
+    
+    inputTugas.value = "";
+    inputTanggal.value = "";
+    inputStatus.value = "Progress"; 
+});
