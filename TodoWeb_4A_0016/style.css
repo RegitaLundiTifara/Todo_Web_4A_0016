@@ -59,3 +59,63 @@ button {
 button:hover {
     background: #4338ca;
 }
+
+li {
+    list-style: none;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hapus {
+    background: #ef4444;
+}
+
+.hapus:hover {
+    background: #dc2626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nama {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.progress {
+    color: orange;
+    font-weight: bold;
+}
+
+.done {
+    color: green;
+    font-weight: bold;
+}
+
+.aksi {
+    display: flex;
+    gap: 10px;
+}
+
+.edit {
+    background: orange;
+}
+
+.edit:hover {
+    background: darkorange;
+}
