@@ -16,4 +16,33 @@ addEventListener("click", function() {
         alert("Data harus dimasukkan!");
         return;
 }
+
+    if(dataEdit) {
+        dataEdit.querySelector(".nama").innerHTML = tugas;
+        dataEdit.querySelector(".tanggal").innerHTML = "Tanggal: " + tanggal;
+        
+        const elStatus = dataEdit.querySelector(".status");
+        elStatus.innerHTML ="Status: " + status;
+        elStatus.className = status === "Done" ? "status done" : "status progress";
+
+        dataEdit = null;
+        btntambah.innerHTML = "Tambah Data";
+        
+    } else {
+        const listbaru = document.createElement("li");
+        
+        listbaru.innerHTML = `
+            <div class="info">
+                <h3 class="nama">${tugas}</h3>
+                <p class="tanggal">Tanggal: ${tanggal}</p>
+                <p class="status ${status === "Done" ? "done" : "progress"}">
+                    Status: ${status}
+                </p>
+            </div>
+
+            <div class="aksi">
+                <button class="edit">Edit</button>
+                <button class="hapus">Hapus</button>
+            </div>
+        `;
 }); 
