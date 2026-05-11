@@ -101,3 +101,8 @@ li {
     color: orange;
     font-weight: bold;
 }
+
+.done {
+    color: green;
+    font-weight: bold;
+}
