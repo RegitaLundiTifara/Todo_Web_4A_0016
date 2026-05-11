@@ -91,3 +91,8 @@ li {
     flex-direction: column;
     gap: 5px;
 }
+
+.nama {
+    font-size: 18px;
+    font-weight: bold;
+}
