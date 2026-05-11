@@ -7,3 +7,12 @@ const inputStatus = document.getElementById("inputStatus");
 let dataEdit = null;
 
 btntambah.addEventListener("click", function() {
+
+    const tugas = inputTugas.value;
+    const tanggal = inputTanggal.value;
+    const status = inputStatus.value;
+
+    if(tugas === "" || tanggal === "") {
+        alert("Data harus dimasukkan!");
+        return;
+    }
