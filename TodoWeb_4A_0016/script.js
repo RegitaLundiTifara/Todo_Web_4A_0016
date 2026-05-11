@@ -46,5 +46,5 @@ addEventListener("click", function() {
             </div>
         `;
 
-        daftarTugas.appendChild(listbaru);
+       
 }); 
