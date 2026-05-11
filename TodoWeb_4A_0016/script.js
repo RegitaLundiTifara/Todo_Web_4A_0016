@@ -65,3 +65,8 @@ btntambah.addEventListener("click", function() {
             btntambah.innerHTML = "Update Data";    
         });
     }
+
+     inputTugas.value = "";
+    inputTanggal.value = "";
+    inputStatus.value = "Progress"; 
+});
