@@ -45,4 +45,6 @@ addEventListener("click", function() {
                 <button class="hapus">Hapus</button>
             </div>
         `;
+
+        daftarTugas.appendChild(listbaru);
 }); 
