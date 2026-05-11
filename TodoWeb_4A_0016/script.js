@@ -46,5 +46,9 @@ addEventListener("click", function() {
             </div>
         `;
 
-       
+        daftarTugas.appendChild(listbaru);
+        // Tombol hapus
+         const btnHapus = listbaru.querySelector(".hapus");
+        btnHapus.addEventListener("click", function() {
+            listbaru.remove();
 }); 
