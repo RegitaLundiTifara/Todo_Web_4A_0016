@@ -41,9 +41,12 @@ const inputTugas = $("#inputTugas");
 
             //Tombol hapus
             const btnHapus = listbaru.find(".hapus")
-             btnHapus.addEventListener("click", function() {
+            listbaru.find(".hapus").click(function () {
             listbaru.remove();
-        });
+            });
+
+        // Tombol Edit
+
 
 
 
